@@ -1,0 +1,59 @@
+@use '../abstracts/variables' as var;
+
+.header {
+    padding: 2rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__nav-bar {
+        margin-left: 100px;
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 56px;
+            li {
+                a{
+                    &:hover {
+                        text-decoration: underline
+                    }
+                    img {
+                        position: relative;
+                        top: 8px;
+                    }
+                }
+            }
+        }
+    }
+    &__cart {
+        margin-left: 80px;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        a{
+            width: 32px;
+            height: 32px;
+            &:hover {
+                border-radius: 50%;
+                background-color: var.$color-blue-dark-hover;
+            }
+        }
+    }
+    &__login {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        .sign-in {
+            text-decoration: underline;
+            &:hover {
+                background-color: var.$color-blue-dark-hover;
+                border-radius: 20px;
+                padding: 10px 20px;
+                border: 1px solid var.$color-blue-dark;
+                transition: all 0.2s ease;
+
+            }
+        }
+    }
+}
+
+   

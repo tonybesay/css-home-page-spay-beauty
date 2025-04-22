@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Proyecto CSS 06 - Spa & Beauty</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header class="header">
+        <div class="header__logo-container"> 
+          <img src="./img/logo-glowqueen.svg" alt="Logo GlowQueen" class="header__logo">
+        </div>
+
+        <nav class="header__nav-bar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Facilities</a></li>
+            <li>
+              <a href="#">More  
+                <img src="./img/icon-chevron-down.svg" alt="icon-chevron-down">
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+          <aside class="header__cart">
+            <a href="#"><img src="./img/icon-search.svg" alt="icon search"></a>
+            <a href="#"><img src="./img/icon-shopping-bag.svg" alt="icon shopping bag"></a>
+          </aside>
+
+          <aside class="header__login">
+            <a href="#" class="sign-in">Sign In</a>
+            <a href="#" class="btn">Sign Up</a>
+          </aside>
+
+      </header>
+
+      <main class="main">
+        
+       <section class="main__hero">
+
+        <div class="main__hero__content">
+          <h1 class="main__hero__content__title">Bring back the beauty and glow of your skin</h1>
+          <p class="main__hero__content__subtitle">We provide you various treatments from head to toe using the best product, advanced technology, and affordable price</p>
+          <div class="main__hero__content__buttons">
+            <a href="#" class="btn">Book Now</a>
+            <div class="main__hero__content__buttons__video">
+              <a href="#">
+                <img src="./img/icon-play.svg" alt="">Watch Video
+              </a>
+
+            </div>
+          </div>
+          <div class="main__hero__content__data">
+            <div class="main__hero__content__data__category">
+              <img src="./img/icon-face-massage.svg" alt="Special Treatment" loading="lazy">
+              <h2>15+</h2>
+              <p>Special Treatment</p>
+            </div>
+            <div class="main__hero__content__data__category">
+              <img src="./img/icon-lotus.svg" alt="Professional Therapist" loading="lazy">
+              <h2>25+</h2>
+              <p>Professional Therapist</p>
+            </div>
+            <div class="main__hero__content__data__category">
+              <img src="./img/icon-mortar.svg" alt="Herbal Cream Formula" loading="lazy">
+              <h2>100%</h2>
+              <p class="bold">Herbal <br>Cream Formula</p>
+            </div>
+          </div>
+        </div>
+
+          <div class="main__hero__testimony">
+            <div class="main__hero__testimony__01">
+              <img src="./img/icon-quotation-marks.svg" alt="Quotation" loading="lazy">
+              <p>I have a regular schedule to take treatment from GlowQueen, they gave me the best service and treatment ever to maintain the beauty and health of my skin</p>
+              <h4>Sophia Princeton</h4>
+            </div>
+            <div class="main__hero__testimony__02">
+              <img src="./img/icon-quotation-marks.svg" alt="container" loading="lazy">
+              <p>For the past few years, I've had a hard time finding the right place for skin care to deal with my complicated skin condition, thank God I found GlowQueen to treat my skin</p>
+              <h4>Tamara Jules</h4>
+            </div>
+          </div>
+
+       </section>
+
+      </main>
+
+    </div> <!-- div.container -->
+
+
+
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+
+</html>
